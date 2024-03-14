@@ -1,8 +1,0 @@
-
-path: #the file path for the images/videos
-train:
-val:
-
-
-# Classes : list all objects you're detecting ie car, sign, person
-names:

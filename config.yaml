@@ -1,0 +1,10 @@
+
+path: \Users\jcjor\PycharmProjects\APSC-103-804E-Computer-Vision\data #the file path for the images/videos
+train: images/train
+val: images/train
+
+
+# Classes : list all objects you're detecting ie car, sign, person
+names:
+  0: car
+
