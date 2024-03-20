@@ -1,0 +1,29 @@
+/* styles.css */
+body, html {
+    height: 100%; /* Ensure the body and html elements cover the entire viewport */
+    margin: 0;
+}
+
+.navbar {
+    position: fixed; /* or position: absolute; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    padding-top: 20px;
+    color: white;
+}
+.navbar-nav {
+    list-style: none;
+    padding-left: 0;
+}
+
+        .container {
+            width: 50%;
+            text-align: right; /* Align content to the right */
+        }
+        .textbox {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
