@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Register for Hyperloop Computer Vision System</h1>
+    <form action="/register" method="post">
+        <input autocomplete="off" autofocus="name" placeholder="Name" type="text">
+        <select name="is Member?">
+            <option disabled selected value="">Is Member?</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+{% endblock %}
