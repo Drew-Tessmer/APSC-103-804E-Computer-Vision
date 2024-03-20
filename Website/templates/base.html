@@ -22,32 +22,33 @@
             padding: 0;
             display: flex;
             justify-content: space-between;
-            align-items: center;
             height: 100vh;
         }
     </style>
 </head>
 <body>
     <div class="navbar bg-dark">
-        <ul class="navbar-nav">
-            <li class="nav-item">
+        <ul class= "navbar-nav d-flex justify-content-between w-100" >
+             <li class="nav-item mb-4 mt-4">
                 <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item">
+             <li class="nav-item mb-4 mt-4">
                 <a class="nav-link" href="/logout">Logout</a>
             </li>
-            <li class="nav-item">
+             <li class="nav-item mb-4 mt-4">
                 <a class="nav-link" href="/login">Login</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mb-4 mt-4">
                 <a class="nav-link" href="/sign-up">Sign Up</a>
             </li>
         </ul>
     </div>
 
     <div class="container">
-        <!-- Put in the label text below, this will be passed from the backend as objects are detected -->
+            {% block content1 %}
         <label>{{ label_text }}</label> <!-- Label -->
+    {% endblock %}
+        <!-- Put in the label text below, this will be passed from the backend as objects are detected -->
     </div>
 
     <script
