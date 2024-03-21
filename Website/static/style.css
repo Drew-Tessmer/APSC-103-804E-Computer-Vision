@@ -1,0 +1,42 @@
+/* styles.css */
+body, html {
+    height: 100%; /* Ensure the body and html elements cover the entire viewport */
+    margin: 0;
+}
+
+.navbar {
+    position: fixed; /* constrain the navbar to the left side of the screen */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    padding-top: 20px;
+}
+.nav-link{
+    color: white;
+}
+.navbar-nav {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container {
+    width: 400px;
+    position: fixed; /* Position the container */
+    top: 0;
+    right: 0; /* Align to the right side of the screen */
+    height: 100%; /* Cover the entire height of the viewport */
+    padding-top: 20px; /* Optional: Add padding at the top */
+    color: black; /* Set text color */
+    text-align: center; /* Optional: Align text to the center */
+}
+
+.textbox {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-container {
+    margin-top: 50px; /* Adjust the margin-top as needed */
+}
