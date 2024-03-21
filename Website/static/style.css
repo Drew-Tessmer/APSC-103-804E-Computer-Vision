@@ -13,7 +13,7 @@ body, html {
     padding-top: 20px;
 }
 .nav-link{
-    color: white !important;
+    color: white;
 }
 .navbar-nav {
     list-style: none;
