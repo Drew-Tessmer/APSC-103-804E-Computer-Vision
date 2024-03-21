@@ -9,8 +9,11 @@ body, html {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100px;
+    width: 6%;
     padding-top: 20px;
+    border-width: 3px;
+    border-right: solid;
+    border-color: black;
 }
 .nav-link{
     color: white;
@@ -20,20 +23,36 @@ body, html {
     padding-left: 0;
 }
 
-.container {
-    width: 300px;
+.rightLabel {
+    width: 27%;
     position: fixed; /* Position the container */
     top: 0;
     right: 0; /* Align to the right side of the screen */
     height: 100%; /* Cover the entire height of the viewport */
     padding-top: 20px; /* Optional: Add padding at the top */
     color: black; /* Set text color */
-    text-align: right;
+    text-align: left;
     word-wrap: break-word;
+    background-color: gray;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
 }
 
-.textbox {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+.bottomLabel {
+    width: 67%;
+    position: fixed; /* Position the container */
+    bottom: 0;
+    margin-left: 6%; /* Align to the right side of the screen */
+    height: 30%; /* Cover the entire height of the viewport */
+    margin-top: 70%;
+    color: gray; /* Set text color */
+    text-align: right;
+    word-wrap: break-word;
+    background-color: gray;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
 }
