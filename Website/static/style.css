@@ -1,0 +1,66 @@
+/* styles.css */
+body, html {
+    height: 100%; /* Ensure the body and html elements cover the entire viewport */
+    margin: 0;
+}
+
+.navbar {
+    position: fixed; /* constrain the navbar to the left side of the screen */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6%;
+    padding-top: 20px;
+    border-width: 3px;
+    border-right: solid;
+    border-color: black;
+}
+.nav-link{
+    color: white;
+}
+.navbar-nav {
+    list-style: none;
+    padding-left: 0;
+}
+
+.rightLabel {
+    width: 27%;
+    position: fixed; /* Position the container */
+    top: 0;
+    right: 0; /* Align to the right side of the screen */
+    height: 100%; /* Cover the entire height of the viewport */
+    padding-top: 20px; /* Optional: Add padding at the top */
+    color: black; /* Set text color */
+    text-align: left;
+    word-wrap: break-word;
+    background-color: gray;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.bottomLabel {
+    width: 67%;
+    position: fixed; /* Position the container */
+    bottom: 0;
+    margin-left: 6%; /* Align to the right side of the screen */
+    height: 30%; /* Cover the entire height of the viewport */
+    margin-top: 70%;
+    color: gray; /* Set text color */
+    text-align: right;
+    word-wrap: break-word;
+    background-color: gray;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
+}
+
+.image-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
