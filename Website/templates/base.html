@@ -23,6 +23,9 @@
             display: flex;
             justify-content: space-between;
             height: 100vh;
+            border-color: black;
+            border-top: solid;
+            border-width: 3px;
         }
     </style>
 </head>
@@ -52,6 +55,21 @@
     <div class="bottomLabel">
             {% block label1 %}
         <label>{{ label_text }}</label>
+    {% endblock %}
+    </div>
+        <div class="videoSidebarLeft">
+    </div>
+            <div class="videoSidebarRight">
+    </div>
+        <div class="detectionLabel">
+            {% block detectTitle %}
+        <label>OBJECTS DETECTED</label>
+    {% endblock %}
+    </div>
+
+        <div class="actionLabel">
+            {% block actions %}
+        <label>*SLOW DOWN*</label> <!-- Label -->
     {% endblock %}
     </div>
     <script
