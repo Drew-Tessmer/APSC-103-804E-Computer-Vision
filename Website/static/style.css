@@ -14,6 +14,7 @@ body, html {
     border-width: 3px;
     border-right: solid;
     border-color: black;
+    border-top: none;
 }
 .nav-link{
     color: white;
@@ -37,6 +38,7 @@ body, html {
     border-width: 3px;
     border-color: black;
     border-style: solid;
+    border-top: none;
 }
 
 .bottomLabel {
@@ -57,10 +59,74 @@ body, html {
     border-left: none;
 }
 
-.image-container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.videoSidebarLeft {
+    width: 10%;
+    position: fixed;
+    top: 0;
+    margin-left: 6%;
+    height: 70%;
+    background-color: lightgray;
+    border-width: 3px;
+    border-color: black;
+    border-right: solid;
+    border-top: solid;
+}
 
+.image-container {
+    image-size: 100%;
+    width: 100%;
+    position: fixed; /* Position the container */
+    top: 0;
+    right: 54%;
+    left: 12%; /* Align to the right side of the screen */
+    height: 100%; /* Cover the entire height of the viewport */
+    padding-top: 0px; /* Optional: Add padding at the top */
+    background-color: gray;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+
+}
+.videoSidebarRight {
+    width: 10%;
+    position: fixed;
+    top: 0;
+    right: 27%;
+    height: 70%;
+    background-color: lightgray;
+    border-width: 3px;
+    border-color: black;
+    border-left: solid;
+    border-top: solid;
+}
+
+.detectionLabel{
+    width: 27%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 8%;
+    text-align: center;
+    color: red;
+    background-color: black;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-bottom: dot-dash;
+}
+.actionLabel{
+    width: 67%;
+    position: fixed; /* Position the container */
+    bottom: 0;
+    margin-left: 6%; /* Align to the right side of the screen */
+    height: 10%; /* Cover the entire height of the viewport */
+    color: red; /* Set text color */
+    text-align: center;
+    word-wrap: break-word;
+    background-color: black;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
 }
