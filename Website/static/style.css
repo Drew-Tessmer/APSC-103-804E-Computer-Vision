@@ -9,7 +9,7 @@ body, html {
     top: 0;
     left: 0;
     height: 100%;
-    width: 6%;
+    width: 9%;
     padding-top: 20px;
     border-width: 3px;
     border-style: solid;
@@ -42,10 +42,10 @@ body, html {
 }
 
 .bottomLabel {
-    width: 67%;
+    width: 64%;
     position: fixed; /* Position the container */
     bottom: 10%;
-    margin-left: 6%; /* Align to the right side of the screen */
+    margin-left: 9%; /* Align to the right side of the screen */
     height: 20%; /* Cover the entire height of the viewport */
     margin-top: 70%;
     color: gray; /* Set text color */
@@ -63,7 +63,7 @@ body, html {
     width: 10%;
     position: fixed;
     top: 0;
-    margin-left: 6%;
+    margin-left: 9%;
     height: 70%;
     background-color: lightgray;
     border-width: 3px;
@@ -100,10 +100,10 @@ body, html {
     border-bottom: dot-dash;
 }
 .actionLabel{
-    width: 67%;
+    width: 64%;
     position: fixed; /* Position the container */
     bottom: 0;
-    margin-left: 6%; /* Align to the right side of the screen */
+    margin-left: 9%; /* Align to the right side of the screen */
     height: 10%; /* Cover the entire height of the viewport */
     color: red; /* Set text color */
     text-align: center;
