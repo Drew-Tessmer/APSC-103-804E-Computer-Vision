@@ -9,10 +9,10 @@ body, html {
     top: 0;
     left: 0;
     height: 100%;
-    width: 6%;
+    width: 9%;
     padding-top: 20px;
     border-width: 3px;
-    border-right: solid;
+    border-style: solid;
     border-color: black;
     border-top: none;
 }
@@ -27,10 +27,9 @@ body, html {
 .rightLabel {
     width: 27%;
     position: fixed; /* Position the container */
-    top: 0;
+    top: 8%;
     right: 0; /* Align to the right side of the screen */
     height: 100%; /* Cover the entire height of the viewport */
-    padding-top: 20px; /* Optional: Add padding at the top */
     color: black; /* Set text color */
     text-align: left;
     word-wrap: break-word;
@@ -38,15 +37,16 @@ body, html {
     border-width: 3px;
     border-color: black;
     border-style: solid;
+
     border-top: none;
 }
 
 .bottomLabel {
-    width: 67%;
+    width: 64%;
     position: fixed; /* Position the container */
-    bottom: 0;
-    margin-left: 6%; /* Align to the right side of the screen */
-    height: 30%; /* Cover the entire height of the viewport */
+    bottom: 10%;
+    margin-left: 9%; /* Align to the right side of the screen */
+    height: 20%; /* Cover the entire height of the viewport */
     margin-top: 70%;
     color: gray; /* Set text color */
     text-align: right;
@@ -63,7 +63,7 @@ body, html {
     width: 10%;
     position: fixed;
     top: 0;
-    margin-left: 6%;
+    margin-left: 9%;
     height: 70%;
     background-color: lightgray;
     border-width: 3px;
@@ -71,6 +71,7 @@ body, html {
     border-right: solid;
     border-top: solid;
 }
+
 
 .image-container {
     image-size: 100%;
@@ -115,10 +116,10 @@ body, html {
     border-bottom: dot-dash;
 }
 .actionLabel{
-    width: 67%;
+    width: 64%;
     position: fixed; /* Position the container */
     bottom: 0;
-    margin-left: 6%; /* Align to the right side of the screen */
+    margin-left: 9%; /* Align to the right side of the screen */
     height: 10%; /* Cover the entire height of the viewport */
     color: red; /* Set text color */
     text-align: center;
