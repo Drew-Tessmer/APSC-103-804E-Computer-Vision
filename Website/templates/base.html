@@ -47,6 +47,11 @@
         </ul>
     </div>
 
+        <div class="image-container">
+                <!-- Replace 'image.jpg' with the path to your image -->
+                <img class="fit-image" src="{{ url_for('static', filename='image.jpg') }}" alt="Image">
+    </div>
+
     <div class="rightLabel">
             {% block content1 %}
         <label>{{ label_text }}</label> <!-- Label -->
