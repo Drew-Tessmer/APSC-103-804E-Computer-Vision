@@ -9,7 +9,7 @@ body, html {
     top: 0;
     left: 0;
     height: 100%;
-    width: 9%;
+    width: 8%;
     padding-top: 20px;
     border-width: 3px;
     border-style: solid;
@@ -27,7 +27,7 @@ body, html {
 .rightLabel {
     width: 27%;
     position: fixed; /* Position the container */
-    top: 8%;
+    top: 6%;
     right: 0; /* Align to the right side of the screen */
     height: 100%; /* Cover the entire height of the viewport */
     color: black; /* Set text color */
@@ -42,10 +42,10 @@ body, html {
 }
 
 .bottomLabel {
-    width: 64%;
+    width: 65%;
     position: fixed; /* Position the container */
     bottom: 10%;
-    margin-left: 9%; /* Align to the right side of the screen */
+    margin-left: 8%; /* Align to the right side of the screen */
     height: 20%; /* Cover the entire height of the viewport */
     margin-top: 70%;
     color: gray; /* Set text color */
@@ -59,12 +59,27 @@ body, html {
     border-left: none;
 }
 
+.topLabel{
+    width: 65%;
+    position: fixed;
+    top: 0;
+    right: 27%;
+    height: 6%;
+    text-align: center;
+    color: red;
+    background-color: black;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-bottom: dot-dash;
+}
+
 .videoSidebarLeft {
     width: 10%;
     position: fixed;
-    top: 0;
-    margin-left: 9%;
-    height: 70%;
+    top: 6%;
+    margin-left: 8%;
+    height: 64%;
     background-color: lightgray;
     border-width: 3px;
     border-color: black;
@@ -75,9 +90,9 @@ body, html {
 .videoSidebarRight {
     width: 10%;
     position: fixed;
-    top: 0;
+    top: 6%;
     right: 27%;
-    height: 70%;
+    height: 64%;
     background-color: lightgray;
     border-width: 3px;
     border-color: black;
@@ -90,7 +105,7 @@ body, html {
     position: fixed;
     top: 0;
     right: 0;
-    height: 8%;
+    height: 6%;
     text-align: center;
     color: red;
     background-color: black;
@@ -100,10 +115,10 @@ body, html {
     border-bottom: dot-dash;
 }
 .actionLabel{
-    width: 64%;
+    width: 65%;
     position: fixed; /* Position the container */
     bottom: 0;
-    margin-left: 9%; /* Align to the right side of the screen */
+    margin-left: 8%; /* Align to the right side of the screen */
     height: 10%; /* Cover the entire height of the viewport */
     color: red; /* Set text color */
     text-align: center;
