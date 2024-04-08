@@ -47,24 +47,27 @@
         </ul>
     </div>
 
-    <div class="image-container">
+        <div class="image-container">
                 <!-- Replace 'image.jpg' with the path to your image -->
-                <img src="{{ url_for('static', filename='images/image.jpg') }}" alt="Image">
+                <img class="fit-image" src="{{ url_for('static', filename='image.jpg') }}" alt="Image">
     </div>
 
     <div class="rightLabel">
             {% block content1 %}
-        <label>{{ label_text }}</label> <!-- Label -->
+        <label> {{label_text}}}</label> <!-- Label -->
     {% endblock %}
     </div>
-
     <div class="bottomLabel">
             {% block label1 %}
         <label>{{ label_text }}</label>
     {% endblock %}
     </div>
-
-<div class="videoSidebarLeft">
+        <div class="topLabel">
+            {% block labelTop %}
+        <label> LIVE FEED </label>
+    {% endblock %}
+    </div>
+        <div class="videoSidebarLeft">
     </div>
             <div class="videoSidebarRight">
     </div>
@@ -79,7 +82,6 @@
         <label>*SLOW DOWN*</label> <!-- Label -->
     {% endblock %}
     </div>
-
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -95,5 +97,21 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+{#<script>#}
+{#        // Fetch the detection status from the Flask route#}
+{#        fetch('/detect', {#}
+{#            method: 'POST',#}
+{#            body: new FormData(document.querySelector('form')),#}
+{#        })#}
+{#        .then(response => response.json())#}
+{#        .then(data => {#}
+{#            // Check if an obstacle is detected#}
+{#            if (data.message === 'Warning: Obstacle detected!') {#}
+{#                // Update the rightLabel with the warning message#}
+{#                document.getElementById('rightLabel').innerText = data.message;#}
+{#            }#}
+{#        })#}
+{#        .catch(error => console.error('Error:', error));#}
+{#    </script>#}
 </body>
 </html>
