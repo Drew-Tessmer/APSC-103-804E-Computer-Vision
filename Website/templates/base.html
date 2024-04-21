@@ -16,6 +16,10 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
+     <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+         rel="stylesheet"
+     />
     <style>
         body {
             margin: 0;
@@ -49,12 +53,12 @@
 
         <div class="image-container">
                 <!-- Replace 'image.jpg' with the path to your image -->
-                <img class="fit-image" src="{{ url_for('static', filename='image.jpg') }}" alt="Image">
+                <img class="fit-image" src="{{ url_for('static', filename='images/image.jpg') }}" alt="Image">
     </div>
 
     <div class="rightLabel">
             {% block content1 %}
-        <label> {{label_text}}}</label> <!-- Label -->
+        <label> {{label_text}}</label> <!-- Label -->
     {% endblock %}
     </div>
     <div class="bottomLabel">

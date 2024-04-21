@@ -12,7 +12,7 @@ body, html {
     width: 8%;
     padding-top: 20px;
     border-width: 3px;
-    border-style: solid;
+    border-style: outset;
     border-color: black;
     border-top: none;
 }
@@ -68,7 +68,7 @@ body, html {
     right: 27%;
     height: 6%;
     text-align: center;
-    color: red;
+    color: orange;
     background-color: black;
     border-width: 3px;
     border-color: black;
@@ -95,7 +95,7 @@ body, html {
     top: 6%;
     margin-left: 8%;
     height: 64%;
-    background-color: lightgray;
+    background-color: black;
     border-width: 3px;
     border-color: black;
     border-right: solid;
@@ -108,7 +108,7 @@ body, html {
     top: 6%;
     right: 27%;
     height: 64%;
-    background-color: lightgray;
+    background-color: black;
     border-width: 3px;
     border-color: black;
     border-left: solid;
