@@ -8,7 +8,7 @@
 
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: //Users//santo//Downloads// # dataset root dir (leave empty for HUB)
+path: /Users/santo/Downloads/Path yolov8 # dataset root dir (leave empty for HUB)
 train: train/images  # train images (relative to 'path') 4 images
 val: valid/images  # val images (relative to 'path') 4 images
 test:  test/images # test images (optional)
@@ -18,8 +18,8 @@ test:  test/images # test images (optional)
 #flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
 
 # Classes
-names:
-  0: person
+nc: 2
+names: ['danger', 'railway']
 
 # Download script/URL (optional)
 download:
