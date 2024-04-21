@@ -4,17 +4,31 @@ body, html {
     margin: 0;
 }
 
+.file-upload {
+    padding-top: 2px;
+    padding-left: 2px;
+    opacity: 100%;
+    position: fixed;
+    top: 0;
+    height: 12%;
+    width: 8%;
+
+    background-color: black;
+    text-align: center;
+}
+
 .navbar {
     position: fixed; /* constrain the navbar to the left side of the screen */
-    top: 0;
+    top: 12%;
     left: 0;
-    height: 100%;
+    height: 89%;
     width: 8%;
-    padding-top: 20px;
+    padding-top: 0;
     border-width: 3px;
-    border-style: outset;
+    border-style: solid;
     border-color: black;
     border-top: none;
+    background-color: black;
 }
 .nav-link{
     color: white;
@@ -32,12 +46,10 @@ body, html {
     height: 100%; /* Cover the entire height of the viewport */
     color: black; /* Set text color */
     text-align: left;
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold;
     word-wrap: break-word;
-    background-color: gray;
+    background-color: darkslategrey;
     border-width: 3px;
-    border-color: black;
+    border-color: grey;
     border-style: solid;
 
     border-top: none;
@@ -50,12 +62,12 @@ body, html {
     margin-left: 8%; /* Align to the right side of the screen */
     height: 20%; /* Cover the entire height of the viewport */
     margin-top: 70%;
-    color: gray; /* Set text color */
+    color: white; /* Set text color */
     text-align: right;
     word-wrap: break-word;
-    background-color: gray;
+    background-color: darkslategrey;
     border-width: 3px;
-    border-color: black;
+    border-color: grey;
     border-style: solid;
     border-right: none;
     border-left: none;
@@ -68,15 +80,15 @@ body, html {
     right: 27%;
     height: 6%;
     text-align: center;
-    color: orange;
+    color: red;
     background-color: black;
     border-width: 3px;
-    border-color: black;
+    border-color: grey;
     border-style: solid;
     border-bottom: dot-dash;
 }
 
-.image-container img{
+.image-container video{
     width: 49%;
     position: fixed;
     top: 6%;
@@ -84,7 +96,7 @@ body, html {
     height: 64%;
     background-color: black;
     border-width: 3px;
-    border-color: black;
+    border-color: grey;
     border-style: solid;
     object-fit: contain;
 }
@@ -95,11 +107,11 @@ body, html {
     top: 6%;
     margin-left: 8%;
     height: 64%;
-    background-color: black;
+    background-color: bisque;
     border-width: 3px;
-    border-color: black;
+    border-color: grey;
     border-right: solid;
-    border-top: solid;
+    border-top: none;
 }
 
 .videoSidebarRight {
@@ -108,11 +120,11 @@ body, html {
     top: 6%;
     right: 27%;
     height: 64%;
-    background-color: black;
+    background-color: bisque;
     border-width: 3px;
-    border-color: black;
+    border-color: grey;
     border-left: solid;
-    border-top: solid;
+    border-top: none;
 }
 
 .detectionLabel{
@@ -125,7 +137,7 @@ body, html {
     color: red;
     background-color: black;
     border-width: 3px;
-    border-color: black;
+    border-color: grey;
     border-style: solid;
     border-bottom: dot-dash;
 }
@@ -140,7 +152,7 @@ body, html {
     word-wrap: break-word;
     background-color: black;
     border-width: 3px;
-    border-color: black;
+    border-color: grey;
     border-style: solid;
     border-right: none;
     border-left: none;
