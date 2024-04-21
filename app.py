@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, redirect
+from Website.__init__ import create_app
+from flask import Flask, render_template, jsonify, request,redirect
 
 app = Flask(__name__)
 
@@ -21,5 +22,12 @@ def register():
         person.append(f"{name} from {isMemberof}")
         return redirect("/registrants")
 
+
+
+# Create Flask app instance
+app = create_app()
+
+# Run the Flask app if the script is executed directly
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
+
