@@ -47,9 +47,19 @@
         </ul>
     </div>
 
+    <div class="file-upload">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+
         <div class="image-container">
-                <!-- Replace 'image.jpg' with the path to your image -->
-                <img class="fit-image" src="{{ url_for('static', filename='image.jpg') }}" alt="Image">
+                <!-- Replace 'video.mp4' with the path to your video -->
+    <video controls class="fit-image">
+        <source src="{{ url_for('static', filename='video1.webm') }}" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
     </div>
 
     <div class="rightLabel">

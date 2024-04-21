@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 {% extends "base.html" %}
-{% block content %} <h1>Home</h1>{% endblock %}
+
+{% block content %}
+<h1>Home</h1>
+{% endblock %}
+
 {% block content1 %}
-    <label>This is a label<br>This is a label</label>
+<label>This is a label<br>This is a label</label>
 {% endblock %}
 
 {% block label1 %}
-        <label>Bottom Label</label>
+<label>Bottom Label</label>
+{% endblock %}
+
+{% block extra_content %}
+<div class="file-upload">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</div>
 {% endblock %}
