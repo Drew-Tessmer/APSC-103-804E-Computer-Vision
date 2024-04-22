@@ -12,7 +12,7 @@ video_path = os.path.join(VIDEO_DIR, 'video4.mp4')
 model_path = r'C:\Users\santo\OneDrive\Documents\GitHub\APSC-103-804E-Computer-Vision\Running_Yolov8\runs\detect\train18\weights\last.pt'
 
 # Construct the output video path
-video_path_out = '{}_out.mp4'.format(os.path.splitext(video_path)[0])
+video_path_out = '{}_out.avi'.format(os.path.splitext(video_path)[0])
 
 # Open the input video
 cap = cv2.VideoCapture(video_path)
@@ -23,8 +23,7 @@ cap = cv2.VideoCapture(video_path)
 
 ret, frame = cap.read()
 H, W, _ = frame.shape
-out = cv2.VideoWriter(video_path_out, cv2.VideoWriter_fourcc(*'a\0\0\0'), int(cap.get(cv2.CAP_PROP_FPS)), (H, W))
-
+out = cv2.VideoWriter(video_path_out, cv2.VideoWriter_fourcc("X", "V", "I", "D"), int(cap.get(cv2.CAP_PROP_FPS)), (H, W))
 
 # Load a model
 model = YOLO(model_path)  # load a custom model
@@ -45,9 +44,9 @@ while ret:
                         cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0, 255, 0), 3, cv2.LINE_AA)
 
     cv2.cvtColor(frame, cv2.COLOR_RGB2BGR, frame)
+    cv2.imshow("Video", frame)
     out.write(frame)
     ret, frame = cap.read()
 
 cap.release()
 out.release()
-cv2.destroyAllWindows()
