@@ -1,29 +1,31 @@
+from ultralytics import YOLO
 import cv2
-import inference
-import supervision as sv
-
-annotator = sv.BoxAnnotator()
-
-def render(predictions, image):
-    classes = {item["class_id"]: item["class"] for item in predictions["predictions"]}
-
-    detections = sv.Detections.from_roboflow(predictions)
-
-    print(predictions)
-
-    image = annotator.annotate(
-        scene=image, detections=detections, labels=[classes[i] for i in detections.class_id]
-    )
-
-    cv2.imshow("Prediction", image)
-    cv2.waitKey(1)
 
 
-inference.Stream(
-    source="webcam",
-    model="microsoft-coco/9",
-    output_channel_order="BGR",
-    use_main_thread=True,
-    on_prediction=render,
-    api_key="api_key"
-)
+# load yolov8 model
+model = YOLO('yolov8n.pt')
+
+# load video
+video_path = 'C:\\Users\\santo\\Downloads\\Path yolov8\\videos\\video3.mp4'
+cap = cv2.VideoCapture(video_path)
+
+ret = True
+# read frames
+while ret:
+    ret, frame = cap.read()
+
+    if ret:
+
+        # detect objects
+        # track objects
+        results = model.track(frame, persist=True)
+
+        # plot results
+        # cv2.rectangle
+        # cv2.putText
+        frame_ = results[0].plot()
+
+        # visualize
+        cv2.imshow('frame', frame_)
+        if cv2.waitKey(25) & 0xFF == ord('q'):
+            break
